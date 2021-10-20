@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+#grid > div {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font-size: 4vw;
+  padding: 10px;
+  width: 550px;
+}
+
+.root {
+  margin: auto;
+  display: flex;
+
+}
+
+.outer-left {
+  width: 11rem;
+  height: 13rem;
+  border: 1px solid rgb(17, 17, 17);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+.outer-right {
+  width: 31rem;
+  height: 13rem;
+  border: 1px solid rgb(7, 7, 7);
+  border-left-width: 0px;
+  background-color: rgb(245, 240, 240);
+  color: rgb(24, 1, 1);
+  font-size: 20px;
+  font-family:sans-serif ;
+}
+
+.card-cont {
+    display: table-cell;
+    width: 50%;
+    font-size: 85%;
+    padding: 5px 20px 20px 50px
+}
+
+.card-cont h3 {
+    color: #7c5708;
+    font-style: italic;
+    line-height: 10px;
+    font-size: 125%
+
+}
+
+.code {
+    color: #0a0202;
+    font-size: 120%
+}
+
+
+.voucher-img {
+  margin-top: 20px;
+  max-width: 100%;
+}
+</style>
+</head>
+<body>
+<div id="grid">
+  {{#each init}}
+
+  <div>
+    <div class='root'>
+      <div class='outer-left'>
+        <img class="voucher-img" src="https://cloud-ex42.usaupload.com/cache/plugins/filepreviewer/226347/fb795235b8b1180a2511ba14533670dd56b2193f423e4e4a8f07a222c4a325e9/280x280_middle.jpg"/>
+      </div>
+      <div class='outer-right'>
+        <section class="card-cont">
+      
+          <h3>If e spoil, we go REPLACE am!</h3>
+          <div class="even-date">
+            <i class="fa fa-calendar"></i>
+            <time>
+              <span>Thank you for trusting our brand,</span> <br>
+              <span>kindly <b>SCAN the QR Code below</b> </span><br>
+              <span>to activate your 13-months warranty.</span>
+              <span style="float: right; padding-left: 10px; margin-bottom: 100px;"> 
+                <img style="width: 100px" src="https://23.filelu.com/i/00010/cxoxcbf977z1_t.jpg"/>
+                <!-- <span style="float: right; margin-bottom: 100px;"> <img style="width: 120px" src="./barcode.png" /></span> -->
+              </span>
+            </time>
+           </div>
+
+          <div>
+            <p class="code">
+              CODE: <strong>{{M2RT02}}</strong> 
+            </p>
+            <p><b>Fast | Strong | Durable</b></p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  {{/each}}
+</div>
+</body>
+</html> 
